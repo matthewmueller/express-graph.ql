@@ -1,7 +1,7 @@
 {
-  "name": "express-graphiql",
+  "name": "express-graph.ql",
   "version": "1.0.0",
-  "description": "Express middleware for enabling graphiql with graph.ql",
+  "description": "Express middleware for querying our graphql server built with graph.ql",
   "keywords": ["graph.ql", "express", "graphql"],
   "author": "Matthew Mueller <mattmuelle@gmail.com>",
   "repository": {

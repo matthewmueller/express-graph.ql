@@ -24,7 +24,7 @@ function middleware (schema_or_fn) {
       : schema_or_fn
 
     if (req.method === 'GET') {
-      return next(new Error('express-graphiql does not support GET requests yet'))
+      return next(new Error('express-graph.ql does not support GET requests yet'))
     }
 
     // parse the request body if we haven't already

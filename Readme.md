@@ -1,7 +1,9 @@
 
 # express-graphiql
 
-  Express middleware for hooking up [graphiql](https://github.com/skevy/graphiql-app) with [graph.ql](https://github.com/matthewmueller/graph.ql)
+  Express middleware for querying our graphql server built with [graph.ql](https://github.com/matthewmueller/graph.ql)
+
+  Also seamlessly supports connections from  [graphiql](https://github.com/skevy/graphiql-app)
 
 ## Installation
 
@@ -12,15 +14,15 @@ npm install express-graphiql
 ## Usage
 
 ```js
-var graphiql = require('express-graphiql')
+var graphql = require('express-graph.ql')
 var Schema = require('./graphql-schema')
-app.post('/query', graphiql(Schema))
+app.post('/query', graphql(Schema))
 ```
 
 **Example using [data-loader](https://github.com/facebook/dataloader):**
 
 ```js
-var graphiql = require('express-graphiql')
+var graphql = require('express-graph.ql')
 var Schema = require('./graphql-schema')
 app.post('/query', function (req) {
   return Schema(req.loaders)
