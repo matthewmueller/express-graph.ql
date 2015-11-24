@@ -1,7 +1,7 @@
 
 # express-graphiql
 
-  Express middleware for hooking up graphiql with [graph.ql](https://github.com/matthewmueller/graph.ql)
+  Express middleware for hooking up [graphiql](https://github.com/skevy/graphiql-app) with [graph.ql](https://github.com/matthewmueller/graph.ql)
 
 ## Installation
 
