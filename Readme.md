@@ -1,9 +1,33 @@
 
 # express-graphiql
 
-  Express middleware for enabling graphiql with graph.ql
+  Express middleware for hooking up graphiql with [graph.ql](https://github.com/matthewmueller/graph.ql)
 
-## License 
+## Installation
+
+```
+npm install express-graphiql
+```
+
+## Usage
+
+```js
+var graphiql = require('express-graphiql')
+var Schema = require('./graphql-schema')
+app.post('/query', graphiql(Schema))
+```
+
+**Example using [data-loader](https://github.com/facebook/dataloader):**
+
+```js
+var graphiql = require('express-graphiql')
+var Schema = require('./graphql-schema')
+app.post('/query', function (req) {
+  return Schema(req.loaders)
+})
+```
+
+## License
 
 (The MIT License)
 
