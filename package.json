@@ -1,0 +1,15 @@
+{
+  "name": "express-graphiql",
+  "version": "1.0.0",
+  "description": "Express middleware for enabling graphiql with graph.ql",
+  "keywords": ["graph.ql", "express", "graphql"],
+  "author": "Matthew Mueller <mattmuelle@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/MatthewMueller/express-graphiql.git"
+  },
+  "dependencies": {
+    "body-parser": "^1.14.1"
+  },
+  "main": "index"
+}
