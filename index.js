@@ -34,7 +34,17 @@ function middleware (schema_or_fn) {
     // run the query against our schema
     function run () {
       schema(req.body.query, variables(req.body.variables))
-        .then(function (data) { res.send(data) })
+        .then(function (data) {
+          if (data.errors) {
+            return res.send({
+              errors: data.errors.map(function (error) {
+                return error.stack
+              })
+            })
+          } else {
+            res.send(data)
+          }
+        })
     }
   }
 }
