@@ -1,6 +1,6 @@
 {
   "name": "express-graph.ql",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Express middleware for querying our graphql server built with graph.ql",
   "keywords": [
     "graph.ql",
