@@ -24,8 +24,8 @@ app.post('/query', graphql(Schema))
 ```js
 var graphql = require('express-graph.ql')
 var Schema = require('./graphql-schema')
-app.post('/query', function (req) {
-  return Schema(req.loaders)
+app.post('/query', function (req, resp, next) {
+  return graphql(Schema(req.loaders))(req, resp, next)
 })
 ```
 
